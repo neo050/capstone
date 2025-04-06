@@ -1,0 +1,121 @@
+.MAIN-FONT
+{
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing:initial;
+    font-style:oblique;
+
+}
+.Secondary-FONT 
+{
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing:initial;
+    font-style:oblique;
+}
+.bold
+{
+    font-weight: bold;
+
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   /* grid-template-columns: repeat(4,auto);*/
+    gap: 1rem;
+    max-width: 1200px;
+    
+}
+.flex
+{
+    display: flex;
+    justify-content:center;
+
+}
+
+
+
+.Objective,.Skills ,.project
+{
+    min-height: 300px; /* לדוגמה, קביעת גובה מינימלי אחיד */
+    padding: 1rem;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Skills {
+    min-height: 400px; /* לדוגמה, קביעת גובה מינימלי אחיד */
+}
+
+.skill {
+    margin: 0;
+    padding: 0 1rem ; 
+}
+
+.project1
+{
+  grid-area: 2/1/3/-1;
+
+}
+.project2
+{
+  grid-area: 3/1/-1/-1;
+  
+
+}
+
+#projects
+{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imgpro1
+{
+  
+  min-width: 400px;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+#carouselExampleIndicators
+{
+  align-self: center;
+}
+.Predictive-web
+{
+  padding-bottom: 1rem;
+}
+
+  
+/* הגדרת גודל ותצוגה אחידה לחצים */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      /* חץ ימני - אייקון בצבע אפור */
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23aaa' d='M3.646 6.854a.5.5 0 0 1 0-.708L5.793 4 3.646 1.854a.5.5 0 1 1 .708-.708l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708 0z'/%3E%3C/svg%3E");
+      }
+      /* חץ שמאלי - הפיכה אופקית (אם צריך) והגדרת אייקון בצבע אפור */
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23aaa' d='M4.354 1.146a.5.5 0 0 1 0 .708L2.207 4l2.147 2.146a.5.5 0 0 1-.708.708l-2.5-2.5a.5.5 0 0 1 0-.708l2.5-2.5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+        /*transform: scaleX(-1);*/
+      }
+      /* העברת הנקודות למטה */
+    
+      /* שינוי צבע הנקודות לאפור */
+      .carousel-indicators [data-bs-target] {
+        background-color: #aaa;
+      }
+      .carousel-indicators .active {
+        background-color: #aaa;
+      }
+
+    
